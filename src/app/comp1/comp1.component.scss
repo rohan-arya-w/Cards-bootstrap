@@ -1,0 +1,78 @@
+.card {
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-family: "Nunito", sans-serif;
+  color: black;
+  min-width: 300px;
+  margin-top: 1.5rem;
+  background-color: white;
+  transition: all 0.2s;
+  h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.452);
+  }
+  p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    span {
+      font-weight: 700;
+      font-size: 4rem;
+    }
+  }
+  ul {
+    text-align: left;
+    list-style-type: none;
+    li {
+      position: relative;
+      font-size: 1.2rem;
+      text-transform: capitalize;
+      &::before {
+        content: "";
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 50%;
+        background-color: dodgerblue;
+        position: absolute;
+        top: calc(30%);
+        left: -2rem;
+      }
+    }
+  }
+  button {
+    all: unset;
+    width: 80%;
+    text-align: center;
+    user-select: none;
+    font-size: 1.5rem;
+    background-color: dodgerblue;
+    opacity: 0.7;
+    border-radius: 2rem;
+    padding: 0.8rem 1.8rem;
+    color: black;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.2s;
+    letter-spacing: 1px;
+  }
+}
+.card:hover {
+  margin-top: -0.25rem;
+  margin-bottom: 0.25rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+}
+.card:hover button {
+  opacity: 1;
+}
+
+.text-muted {
+  color: rgba(0, 0, 0, 0.452);
+  &::before {
+    background-color: grey !important;
+  }
+}
+.highlight {
+  font-weight: 700;
+  color: black;
+}
